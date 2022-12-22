@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhaka Naka Production</title>
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- tailwind css cli -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- customization tailwind css -->
-     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            black: '#131313',
-            yellow: '#FECC02',
-            gray: '#4E4E4E',
-            white: '#FFFFFF',
-          },
-            fontFamily: {
-                'montserrat': ['Montserrat', 'sans-serif'],
-                'bebas': ['Bebas Neue', 'cursive'],
-            },
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#131313',
+                        yellow: '#FECC02',
+                        gray: '#4E4E4E',
+                        white: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'bebas': ['Bebas Neue', 'cursive'],
+                    },
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
+
 <body>
-    <header>
+    <header class="flex justify-center w-full bg-white h-16 absolute">
+        <nav class="w-4/5  h-full   flex justify-between items-center   font-bebas  ">
+            <h1 class="text-4xl">Jhaka Naka Production</h1>
+            <ul class="flex text-xl gap-x-5 hidden md:flex">
+                <li >ABOUT US</li>
+                <li > OUR MOVIES</li>
+                <li >SERVICES</li>
+            </ul>
+        </nav>
        
     </header>
+    <main>
+        <section class="bg-[url('./images/banner.jpg')] h-screen  bg-cover  flex items-center">
+            <div class="font-bebas p-10 w-2/4 text-white ">
+               <h1 class="text-xl">Movie production studio</h1>
+               <h1 class="text-9xl">Films MAde to</h1>
+               <h1 class="text-7xl text-yellow">Perfection</h1>
+               <p class="font-montserrat font-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+                luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                <button class="border-2 px-3 py-2 text-xl hover:text-white hover:bg-yellow hover:border-yellow mt-10">Discover More</button>
+            </div>
+        </section>
+
+        <!-- about us section -->
+    </main>
 </body>
+
 </html>
